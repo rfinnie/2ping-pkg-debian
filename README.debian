@@ -1,0 +1,9 @@
+2ping for Debian
+================
+
+This package includes an initscript to start a 2ping listener as a 
+daemon.  To enable it, edit /etc/default/2ping and set:
+
+  TWOPINGD_RUN=yes
+
+When not enabled, the initscript will be silently ignored.

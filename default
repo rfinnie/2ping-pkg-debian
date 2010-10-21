@@ -1,0 +1,12 @@
+# To start a 2ping listener as a daemon, set to "yes", and optionally
+# add additional options below.
+TWOPINGD_RUN=no
+
+# Additional options that are passed to the 2ping listener.
+# "--listen" is not needed; the initscript will add it for you.
+TWOPINGD_OPTS=""
+
+# User to start listener as.  2ping does not require any sort of 
+# elevated privileges, so "nobody" (default) is recommended.  Unset to 
+# run as root.
+TWOPINGD_USER=nobody
