@@ -1,3 +1,11 @@
+2ping (1.1-1) unstable; urgency=low
+
+  * New upstream release (Closes: #602941)
+  * Bumped standards to 3.9.2
+  * init.d: Guard against race condition when starting (Closes: #602943)
+
+ -- Ryan Finnie <ryan@finnie.org>  Fri, 06 May 2011 20:54:28 -0700
+
 2ping (1.0-1) unstable; urgency=low
 
   * Initial release (Closes: #596753)

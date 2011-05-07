@@ -43,6 +43,7 @@ test -x $DAEMON || exit 0
 TWOPINGD_OPTS=""
 TWOPINGD_USER=nobody
 TWOPINGD_DIETIME=2
+TWOPINGD_SETTLETIME=2
 #TWOPINGD_STARTTIME=2
 
 # Include defaults if available
@@ -166,8 +167,20 @@ case "$1" in
                 # It's ok, the server started and is running
                 log_end_msg 0
             else
-                # It is not running after we did start
-                log_end_msg 1
+                # Guard against a start race condition
+                if [ -n "$TWOPINGD_SETTLETIME" ]; then
+                    sleep $TWOPINGD_SETTLETIME
+                    if  running ; then
+                        # It's ok, the server started and is running
+                        log_end_msg 0
+                    else
+                        # It is not running after we did start
+                        log_end_msg 1
+                    fi
+                else
+                    # It is not running after we did start
+                    log_end_msg 1
+                fi
             fi
         else
             # Either we could not start it

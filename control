@@ -3,7 +3,7 @@ Section: net
 Priority: optional
 Maintainer: Ryan Finnie <ryan@finnie.org>
 Build-Depends: debhelper (>= 7)
-Standards-Version: 3.9.1
+Standards-Version: 3.9.2
 Homepage: http://www.finnie.org/software/2ping/
 Vcs-Browser: http://gitorious.org/2ping/2ping
 Vcs-Git: git://gitorious.org/2ping/2ping.git
