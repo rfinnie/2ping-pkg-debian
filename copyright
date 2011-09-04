@@ -18,12 +18,12 @@ Copyright: 2010 Ryan Finnie
  GNU General Public License for more details.
 
  You should have received a copy of the GNU General Public License with
- the Debian GNU/Linux distribution in file /usr/share/common-licenses/GPL;
+ the Debian GNU/Linux distribution in file /usr/share/common-licenses/GPL-2;
  if not, write to the Free Software Foundation, Inc., 51 Franklin St,
  Fifth Floor, Boston, MA 02110-1301, USA.
 
 On Debian systems, the complete text of the GNU General
-Public License can be found in `/usr/share/common-licenses/GPL'.
+Public License can be found in `/usr/share/common-licenses/GPL-2'.
 
 The Debian packaging is Copyright 2010 Ryan Finnie <ryan@finnie.org> 
 and is licensed under the GPL, see above.
