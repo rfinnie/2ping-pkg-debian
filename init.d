@@ -25,6 +25,8 @@
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
 # Short-Description: starts/stops the 2ping listener
+# Description:       Allows 2ping to act as a listener daemon, needed
+#                    for 2ping client/server operations.
 ### END INIT INFO
 
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin

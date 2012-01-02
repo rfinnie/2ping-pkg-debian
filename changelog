@@ -1,3 +1,9 @@
+2ping (1.2.3-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Ryan Finnie <ryan@finnie.org>  Sun, 01 Jan 2012 16:58:06 -0800
+
 2ping (1.1-2) unstable; urgency=low
 
   * Converted debian/rules to unified dh (fixes litian warnings)
