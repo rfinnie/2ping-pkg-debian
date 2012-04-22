@@ -1,3 +1,11 @@
+2ping (2.0-1) unstable; urgency=low
+
+  * New upstream release
+  * Add EXTRAVERSION support for tagging with Debian revision
+  * Bumped standards to 3.9.3
+
+ -- Ryan Finnie <ryan@finnie.org>  Sun, 22 Apr 2012 16:48:02 -0700
+
 2ping (1.2.3-1) unstable; urgency=low
 
   * New upstream release

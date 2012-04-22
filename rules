@@ -4,8 +4,14 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
+include /usr/share/dpkg/default.mk
+DEB_VERSION_REVISION = $(call dpkg_late_eval,DEB_VERSION_REVISION,echo '$(DEB_VERSION)' | sed -e 's/^.*-//')
+
 %:
 	dh $@ 
+
+override_dh_auto_build:
+	$(MAKE) EXTRAVERSION="-$(DEB_VERSION_REVISION) ($(DEB_VENDOR))"
 
 override_dh_auto_install:
 	$(MAKE) install DESTDIR=$(CURDIR)/debian/2ping PREFIX=/usr
