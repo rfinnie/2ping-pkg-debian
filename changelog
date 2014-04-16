@@ -1,3 +1,13 @@
+2ping (2.1.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Remove Dm-Upload-Allowed
+  * Update Vcs locations
+  * Bump Standards-Version to 3.9.5
+  * debian/watch: add upstream pgpsigurlmangle support
+
+ -- Ryan Finnie <ryan@finnie.org>  Wed, 16 Apr 2014 04:18:38 +0000
+
 2ping (2.0-1) unstable; urgency=low
 
   * New upstream release

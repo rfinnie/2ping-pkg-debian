@@ -11,7 +11,9 @@ DEB_VERSION_REVISION = $(call dpkg_late_eval,DEB_VERSION_REVISION,echo '$(DEB_VE
 	dh $@ 
 
 override_dh_auto_build:
-	$(MAKE) EXTRAVERSION="-$(DEB_VERSION_REVISION) ($(DEB_VENDOR))"
+	dh_auto_build -- EXTRAVERSION="-$(DEB_VERSION_REVISION) ($(DEB_VENDOR))"
 
 override_dh_auto_install:
-	$(MAKE) install DESTDIR=$(CURDIR)/debian/2ping PREFIX=/usr
+	dh_auto_install
+	ln -sf 2ping $(CURDIR)/debian/2ping/usr/bin/2ping6
+	ln -sf 2ping.1p $(CURDIR)/debian/2ping/usr/share/man/man1/2ping6.1p
