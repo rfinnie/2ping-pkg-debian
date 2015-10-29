@@ -1,3 +1,12 @@
+2ping (3.0.1-1) unstable; urgency=medium
+
+  * New upstream release (Closes: #713105)
+  * Upstream rewrite from Perl to Python; packaging updated
+  * Bump Standards-Version to 3.9.6
+  * Update Vcs-Browser/Vcs-Git (Closes: #718336)
+
+ -- Ryan Finnie <ryan@finnie.org>  Thu, 29 Oct 2015 21:03:41 +0000
+
 2ping (2.1.1-1) unstable; urgency=medium
 
   * New upstream release

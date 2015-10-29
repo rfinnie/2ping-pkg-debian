@@ -4,16 +4,17 @@
 # Uncomment this to turn on verbose mode.
 #export DH_VERBOSE=1
 
-include /usr/share/dpkg/default.mk
-DEB_VERSION_REVISION = $(call dpkg_late_eval,DEB_VERSION_REVISION,echo '$(DEB_VERSION)' | sed -e 's/^.*-//')
+export PYBUILD_NAME=2ping
 
 %:
-	dh $@ 
-
-override_dh_auto_build:
-	dh_auto_build -- EXTRAVERSION="-$(DEB_VERSION_REVISION) ($(DEB_VENDOR))"
+	dh $@ --with python2 --buildsystem=pybuild
 
 override_dh_auto_install:
 	dh_auto_install
-	ln -sf 2ping $(CURDIR)/debian/2ping/usr/bin/2ping6
-	ln -sf 2ping.1p $(CURDIR)/debian/2ping/usr/share/man/man1/2ping6.1p
+	install -d -m 0755 $(CURDIR)/debian/2ping/usr/share/man/man1
+	install -m 0755 doc/2ping.1 $(CURDIR)/debian/2ping/usr/share/man/man1
+	ln -sf 2ping.1 $(CURDIR)/debian/2ping/usr/share/man/man1/2ping6.1
+
+override_dh_auto_clean:
+	dh_auto_clean
+	$(RM) twoping/*.pyc

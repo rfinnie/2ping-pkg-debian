@@ -1,0 +1,6 @@
+# Ignore VCS files (non-native packages)
+diff-ignore
+# Ignore VCS files (native packages)
+#tar-ignore
+# XZ compression
+compression = "xz"
