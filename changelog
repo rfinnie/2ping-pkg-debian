@@ -1,3 +1,10 @@
+2ping (3.1.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Add systemd service
+
+ -- Ryan Finnie <ryan@finnie.org>  Fri, 27 Nov 2015 22:39:18 +0000
+
 2ping (3.0.1-1) unstable; urgency=medium
 
   * New upstream release (Closes: #713105)

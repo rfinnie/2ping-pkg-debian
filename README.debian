@@ -1,9 +1,18 @@
 2ping for Debian
 ================
 
-This package includes an initscript to start a 2ping listener as a 
-daemon.  To enable it, edit /etc/default/2ping and set:
+This package includes a systemd service and a sysvinit initscript to
+start a 2ping listener as a daemon, but they are not enabled by default.
 
-  TWOPINGD_RUN=yes
+To enable it on systemd, run:
 
-When not enabled, the initscript will be silently ignored.
+    systemctl enable 2ping
+    systemctl start 2ping
+
+To enable it on sysvinit, edit /etc/default/2ping and set:
+
+    TWOPINGD_RUN=yes
+
+and run:
+
+    /etc/init.d/2ping start
