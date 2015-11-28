@@ -6,8 +6,8 @@ Build-Depends: debhelper (>= 7.0.50~), dpkg-dev (>= 1.16.1~), python-setuptools,
 X-Python-Version: >= 2.6
 Standards-Version: 3.9.6
 Homepage: http://www.finnie.org/software/2ping/
-Vcs-Browser: https://github.com/rfinnie/2ping
-Vcs-Git: https://github.com/rfinnie/2ping
+Vcs-Browser: https://github.com/rfinnie/2ping-pkg-debian
+Vcs-Git: https://github.com/rfinnie/2ping-pkg-debian
 
 Package: 2ping
 Architecture: all
