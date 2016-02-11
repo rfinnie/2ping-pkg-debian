@@ -1,11 +1,12 @@
-2ping (3.1.0-2) UNRELEASED; urgency=medium
+2ping (3.2.0-1) unstable; urgency=medium
 
+  * New upstream release
   * Change Vcs-Git to the Debian packaging, not the upstream repo (fix
     vcswatch error)
   * Use debhelper level 9
   * Convert debian/copyright to dep5
 
- -- Ryan Finnie <ryan@finnie.org>  Sat, 28 Nov 2015 18:54:17 +0000
+ -- Ryan Finnie <ryan@finnie.org>  Thu, 11 Feb 2016 04:13:49 +0000
 
 2ping (3.1.0-1) unstable; urgency=medium
 
