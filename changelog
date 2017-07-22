@@ -1,3 +1,9 @@
+2ping (4.0-2) unstable; urgency=medium
+
+  * Fix python3-all Build-Dependencies
+
+ -- Ryan Finnie <ryan@finnie.org>  Sat, 22 Jul 2017 06:06:53 +0000
+
 2ping (4.0-1) unstable; urgency=medium
 
   * New upstream release (rewrite from Python 2 to 3)
