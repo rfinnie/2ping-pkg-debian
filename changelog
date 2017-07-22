@@ -1,3 +1,13 @@
+2ping (4.0-1) unstable; urgency=medium
+
+  * New upstream release (rewrite from Python 2 to 3)
+  * Fix: init.d-script-needs-depends-on-lsb-base
+  * Fix: Missing dependency on python3-pkg-resources (Closes: #855972)
+  * Updated finnie.org URLs to https
+  * Added Suggests: python3-dnspython
+
+ -- Ryan Finnie <ryan@finnie.org>  Sat, 22 Jul 2017 04:01:56 +0000
+
 2ping (3.2.1-1) unstable; urgency=medium
 
   * New upstream release
