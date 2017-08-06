@@ -12,7 +12,7 @@ Vcs-Git: https://github.com/rfinnie/2ping-pkg-debian
 Package: 2ping
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}, ${python3:Depends}, python3-pkg-resources, lsb-base (>= 3.0-6)
-Suggests: python3-dnspython
+Suggests: python3-dnspython, python3-netifaces, python3-crypto
 Description: Ping utility to determine directional packet loss
  2ping is a bi-directional ping utility. It uses 3-way pings (akin to 
  TCP SYN, SYN/ACK, ACK) and after-the-fact state comparison between a 
