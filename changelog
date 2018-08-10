@@ -1,3 +1,9 @@
+2ping (4.1.2-1) unstable; urgency=medium
+
+  * New upstream release (Closes: #897498)
+
+ -- Ryan Finnie <ryan@finnie.org>  Fri, 10 Aug 2018 03:40:20 +0000
+
 2ping (4.1-1) unstable; urgency=medium
 
   * New upstream release
