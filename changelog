@@ -1,3 +1,10 @@
+2ping (4.2-1) unstable; urgency=medium
+
+  * New upstream release
+  * Add bash_completion definition
+
+ -- Ryan Finnie <ryan@finnie.org>  Sat, 11 Aug 2018 21:13:47 +0000
+
 2ping (4.1.2-1) unstable; urgency=medium
 
   * New upstream release (Closes: #897498)
