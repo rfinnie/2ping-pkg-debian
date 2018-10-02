@@ -1,3 +1,12 @@
+2ping (4.2-2) unstable; urgency=medium
+
+  * Remove Build-Depends python3-all-dev (Closes: #910092)
+  * Remove Build-Depends dh-systemd (Lintian
+    build-depends-on-obsolete-package)
+  * Remove X-Python-Version (Lintian ancient-python-version-field)
+
+ -- Ryan Finnie <ryan@finnie.org>  Tue, 02 Oct 2018 18:16:19 +0000
+
 2ping (4.2-1) unstable; urgency=medium
 
   * New upstream release

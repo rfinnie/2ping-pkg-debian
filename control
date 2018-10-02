@@ -2,8 +2,7 @@ Source: 2ping
 Section: net
 Priority: optional
 Maintainer: Ryan Finnie <ryan@finnie.org>
-Build-Depends: debhelper (>= 9), dpkg-dev (>= 1.16.1~), python3-setuptools, python3-all, python3-all-dev, dh-python, dh-systemd (>= 1.5), bash-completion
-X-Python-Version: >= 2.6
+Build-Depends: debhelper (>= 9.20160709), dpkg-dev (>= 1.16.1~), python3-setuptools, python3-all, dh-python, bash-completion
 Standards-Version: 4.0.0
 Homepage: https://www.finnie.org/software/2ping/
 Vcs-Browser: https://github.com/rfinnie/2ping-pkg-debian
