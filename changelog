@@ -1,3 +1,9 @@
+2ping (4.3-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Ryan Finnie <ryan@finnie.org>  Mon, 03 Dec 2018 19:43:03 +0000
+
 2ping (4.2-2) unstable; urgency=medium
 
   * Remove Build-Depends python3-all-dev (Closes: #910092)
