@@ -1,3 +1,24 @@
+2ping (4.4-1) unstable; urgency=medium
+
+  * New upstream release
+  * Vcs: Use salsa.debian.org
+  * debhelper-compat 13 (Lintian
+    package-uses-deprecated-debhelper-compat-version)
+  * Rules-Requires-Root: no (Lintian rules-requires-root-missing)
+  * Standards-Version: 4.5.0 (Lintian ancient-standards-version)
+  * Move python3-netifaces and python3-dnspython to Recommends
+  * https homepage, https DEP-5 (Lintian insecure-copyright-format-uri)
+  * Fix Lintian file-contains-trailing-whitespace,
+    skip-systemd-native-flag-missing-pre-depends,
+    debian-rules-uses-deprecated-systemd-override
+  * 2ping.service:
+    * Change -q to --quiet
+    * Separate out Documentation lines
+    * PrivateTmp=yes (Lintian
+      systemd-service-file-missing-hardening-features)
+
+ -- Ryan Finnie <ryan@finnie.org>  Sun, 07 Jun 2020 14:45:20 -0700
+
 2ping (4.3-1) unstable; urgency=medium
 
   * New upstream release

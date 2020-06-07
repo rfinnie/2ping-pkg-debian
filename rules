@@ -7,7 +7,7 @@
 export PYBUILD_NAME=2ping
 
 %:
-	dh $@ --with=python3,systemd,bash_completion --buildsystem=pybuild
+	dh $@ --with=python3,bash_completion --buildsystem=pybuild
 
 override_dh_auto_install:
 	dh_auto_install
@@ -19,5 +19,5 @@ override_dh_auto_clean:
 	dh_auto_clean
 	$(RM) -r twoping/*.pyc 2ping.egg-info
 
-override_dh_systemd_enable:
-	dh_systemd_enable --no-enable
+override_dh_installsystemd:
+	dh_installsystemd --no-enable --no-start

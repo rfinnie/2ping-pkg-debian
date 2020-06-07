@@ -4,15 +4,17 @@
 #
 # [Service]
 # ExecStart=
-# ExecStart=/usr/bin/2ping --listen -q -I 127.0.0.1
+# ExecStart=/usr/bin/2ping --listen --quiet -I 127.0.0.1
 
 [Unit]
-Description=ping utility to determine directional packet loss
-Documentation=man:2ping(1) http://www.finnie.org/software/2ping/
+Description=2ping daemon
+Documentation=man:2ping(1)
+Documentation=https://www.finnie.org/software/2ping/
 
 [Service]
 User=nobody
-ExecStart=/usr/bin/2ping --listen -q
+ExecStart=/usr/bin/2ping --listen --quiet
+PrivateTmp=yes
 
 [Install]
 WantedBy=multi-user.target

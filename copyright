@@ -1,7 +1,7 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: 2ping
 Upstream-Contact: Ryan Finnie <ryan@finnie.org>
-Source: http://www.finnie.org/software/2ping/
+Source: https://www.finnie.org/software/2ping/
 
 Files: *
 Copyright: 2010-2017, Ryan Finnie <ryan@finnie.org>
