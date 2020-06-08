@@ -12,8 +12,10 @@ export PYBUILD_NAME=2ping
 override_dh_auto_install:
 	dh_auto_install
 	install -d -m 0755 $(CURDIR)/debian/2ping/usr/share/man/man1
-	install -m 0755 doc/2ping.1 $(CURDIR)/debian/2ping/usr/share/man/man1
+	install -m 0644 doc/2ping.1 $(CURDIR)/debian/2ping/usr/share/man/man1
 	ln -sf 2ping.1 $(CURDIR)/debian/2ping/usr/share/man/man1/2ping6.1
+	install -d -m 0755 $(CURDIR)/debian/2ping/lib/systemd/system
+	install -m 0644 2ping.service $(CURDIR)/debian/2ping/lib/systemd/system/2ping.service
 
 override_dh_auto_clean:
 	dh_auto_clean

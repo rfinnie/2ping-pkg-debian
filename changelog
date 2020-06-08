@@ -1,3 +1,11 @@
+2ping (4.4.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Use init provided by upstream
+  * Install 2ping.1 as 0644
+
+ -- Ryan Finnie <ryan@finnie.org>  Mon, 08 Jun 2020 14:45:25 -0700
+
 2ping (4.4-1) unstable; urgency=medium
 
   * New upstream release
